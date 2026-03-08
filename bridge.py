@@ -11,16 +11,6 @@ HEADER_MAP = {
     130: ("POS", "right_wheel"),
     131: ("POS", "gripper"),
     133: ("POS", "distance"),
-
-    65:  ("Wall-E", "left_wheel"),
-    66:  ("Wall-E", "right_wheel"),
-    67:  ("Wall-E", "gripper"),
-    69:  ("Wall-E", "distance"),
-
-    33:  ("Dazey", "left_wheel"),
-    34:  ("Dazey", "right_wheel"),
-    35:  ("Dazey", "gripper"),
-    37:  ("Dazey", "distance"),
 }
 
 ser = serial.Serial(PORT, BAUD, timeout=0.1)
