@@ -7,21 +7,7 @@ app = Flask(__name__)
 API_KEY = "NHL.Bot123"
 
 bot_state = {
-    "POS": {
-        "left_wheel": 0,
-        "right_wheel": 0,
-        "distance": 0,
-        "gripper": 0,
-        "time": ""
-    },
-    "Wall-E": {
-        "left_wheel": 0,
-        "right_wheel": 0,
-        "distance": 0,
-        "gripper": 0,
-        "time": ""
-    },
-    "Dazey": {
+    "Relaybot": {
         "left_wheel": 0,
         "right_wheel": 0,
         "distance": 0,
@@ -41,18 +27,6 @@ HEADER_MAP = {
     130: ("POS", "right_wheel"),
     131: ("POS", "gripper"),
     133: ("POS", "distance"),
-
-    # Wall-E
-    65:  ("Wall-E", "left_wheel"),
-    66:  ("Wall-E", "right_wheel"),
-    67:  ("Wall-E", "gripper"),
-    69:  ("Wall-E", "distance"),
-
-    # Dazey
-    33:  ("Dazey", "left_wheel"),
-    34:  ("Dazey", "right_wheel"),
-    35:  ("Dazey", "gripper"),
-    37:  ("Dazey", "distance"),
 }
 
 @app.route("/")
